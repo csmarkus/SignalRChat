@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "Chat";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Scripts {
+    <script src="~/lib/signalr/signalr.js"></script>
+    <script src="~/js/chat.js"></script>
+}
+
+<h2>Chat</h2>
+
+<div class="container">
+    <div class="row">&nbsp;</div>
+    <div class="row">
+        <div class="col-lg-6">&nbsp;</div>
+        <div class="col-lg-6">
+            Message<input type="text" id="message" />
+            <input type="button" id="send" value="Send Message" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">&nbsp;</div>
+        <div class="col-lg-6">
+            <ul id="messages"></ul>
+        </div>
+    </div>
+</div>
